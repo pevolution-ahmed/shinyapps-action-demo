@@ -9,9 +9,7 @@ on:
 
 jobs:
   deploy-shiny:
-    runs-on: ubuntu-18.04
-    container:
-      image: python:3.9.2
+    runs-on: ubuntu-latest
 
     steps:
         - name: Checkout
