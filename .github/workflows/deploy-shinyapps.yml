@@ -21,4 +21,4 @@ jobs:
         - name: Push to shinyapps
           run: |
             rsconnect add --account pevolution-ahmed --name pevolution-ahmed --token ${{ secrets.SHINYAPPS_TOKEN }} --secret ${{ secrets.SHINYAPPS_SECRET }}
-            rsconnect deploy shiny . --name pevolution-ahmed --title my-app1 --new
+            rsconnect deploy shiny . --name pevolution-ahmed --title my-app11 --new
