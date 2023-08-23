@@ -20,4 +20,5 @@ jobs:
         
         - name: see secrets
           shell: bash
-          run: echo "its = ${{secrets.SHINYAPPS_SECRET}}"
+          run: |
+            echo "its = ${{ secrets.SHINYAPPS_SECRET }}"
