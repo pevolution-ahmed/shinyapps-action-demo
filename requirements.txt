@@ -1,3 +1,4 @@
+rsconnect-python
 anyio==3.7.1
 appdirs==1.4.4
 asgiref==3.7.2
