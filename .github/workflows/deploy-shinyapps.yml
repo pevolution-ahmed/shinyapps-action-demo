@@ -19,4 +19,5 @@ jobs:
         #   run: pip install -r requirements.txt
         
         - name: see secrets
-          run: echo "${{secrets.SHINYAPPS_SECRET}}"
+          shell: bash
+          run: echo "its = ${{secrets.SHINYAPPS_SECRET}}"
