@@ -1,7 +1,7 @@
 from shiny import App, render, ui
 
 app_ui = ui.page_fluid(
-    ui.h2("Hello Shiny!",style="background-color:red; color:white; "),
+    ui.h2("Hello Shiny!",style="background-color:orange; color:white; "),
     ui.input_slider("n", "N", 0, 100, 20),
     ui.output_text_verbatim("txt"),
 )
