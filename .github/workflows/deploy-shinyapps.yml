@@ -15,10 +15,10 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v3
           
-        # - name: Install dependencies
-        #   run: pip install -r requirements.txt
-        
-        - name: see secrets
-          shell: bash
+        - name: Install dependencies
+          run: pip install -r requirements.txt
+
+        - name: Push to shinyapps
           run: |
-            echo 'its = ${{ secrets.SHINYAPPS_SECRET }}'
+            rsconnect add --account pevolution-ahmed --name pevolution-ahmed --token ${{ secrets.SHINYAPPS_TOKEN }} --secret ${{ secrets.SHINYAPPS_SECRET }}
+            rsconnect deploy shiny . --name pevolution-ahmed --title my-app
