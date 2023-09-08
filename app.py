@@ -12,7 +12,6 @@ app_ui = ui.page_fluid(
 
 )
 
-
 def server(input, output, session):
     @reactive.Calc
     def func1():
