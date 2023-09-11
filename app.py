@@ -4,7 +4,7 @@ import palmerpenguins
 
 penguins = palmerpenguins.load_penguins()
 app_ui = ui.page_fluid(
-    ui.h2("Hello Shiny!",style="background-color:red; color:white; "),
+    ui.h2("Hello Shiny!",style="background-color:green; color:white; "),
     
     ui.input_slider("n", "Input the Year:", 2007, 2009, 1000),
     ui.output_text_verbatim("filtered_txt"),
